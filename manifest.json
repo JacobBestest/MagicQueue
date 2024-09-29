@@ -6,7 +6,7 @@
       "chipFamily": "ESP32",
       "parts": [
         {
-          "path": "Test.bin",
+          "path": "https://jacobbestest.github.io/MagicQueue/WorkingAlpha0_0_5.ino.bin",
           "offset": 0
         }
       ]
