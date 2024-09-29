@@ -1,43 +1,40 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>ESP Web Tools</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ParkPeep - Live Disney Queue Times</title>
     <meta
       name="description"
-      content="Easily allow users to flash new firmware for their ESP-devices on the web."
+      content="ParkPeep - A display device that shows live wait times from Disneyland and Walt Disney World."
     />
-    <meta name="viewport" content="width=device-width" />
 
-    <!-- Metadata for social sharing and theming -->
-    <meta property="og:title" content="ESP Web Tools" />
-    <meta property="og:site_name" content="ESP Web Tools" />
-    <meta
-      property="og:url"
-      content="https://esphome.github.io/esp-web-tools/"
-    />
+    <!-- Social Sharing Metadata -->
+    <meta property="og:title" content="ParkPeep" />
+    <meta property="og:site_name" content="ParkPeep" />
+    <meta property="og:url" content="https://yourwebsite.com" />
     <meta property="og:type" content="website" />
     <meta
       property="og:description"
-      content="Easily allow users to flash new firmware for their ESP-devices on the web."
+      content="Get live wait times for rides at Disneyland and Walt Disney World with ParkPeep."
     />
     <meta
       property="og:image"
-      content="https://esphome.github.io/esp-web-tools/static/social.png"
+      content="https://yourwebsite.com/assets/parkpeep-image.png"
     />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="ESP Web Tools" />
+    <meta name="twitter:title" content="ParkPeep" />
     <meta
       name="twitter:description"
-      content="Easily allow users to flash new firmware for their ESP-devices on the web."
+      content="ParkPeep displays real-time Disney queue times on a stylish and portable device."
     />
     <meta
       name="twitter:image"
-      content="https://esphome.github.io/esp-web-tools/static/social.png"
+      content="https://yourwebsite.com/assets/parkpeep-image.png"
     />
     <meta name="color-scheme" content="dark light" />
 
-    <!-- CSS styling -->
+    <!-- CSS Styling -->
     <style>
       body {
         font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
@@ -46,55 +43,151 @@
         margin: 0;
         line-height: 1.4;
       }
-      .content {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 12px;
+
+      .hero {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Full height of the screen */
+        background-image: url('https://parkpeep.com/Photos/GreenRender.png');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start; /* Move content upwards */
+        padding-top: 50px; /* Add padding from the top */
       }
-      /* Additional styling omitted for brevity */
+
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Dark tint over the image */
+        z-index: 1;
+      }
+
+      .content {
+        position: relative;
+        color: white;
+        text-align: center;
+        z-index: 2; /* Place content above the background */
+        max-width: 800px; /* Limit the width of the text */
+        margin: 0 auto;
+        padding: 0 20px; /* Add some padding on the sides */
+      }
+
+      h1 {
+        font-size: 4rem; /* Increase the product name size */
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        max-width: 600px; /* Limit the width of the description */
+        margin: 0 auto 20px; /* Center align and add space below */
+      }
+
+      .btn {
+        background-color: #ff4500;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 18px;
+        display: inline-block;
+        margin-top: 20px; /* Add space between text and button */
+      }
+
+      .btn:hover {
+        background-color: #ff5722;
+      }
+
+      .faq-section {
+        margin-top: 40px;
+        padding: 0 20px;
+        text-align: left;
+        max-width: 900px;
+        margin: 40px auto;
+      }
+
+      h2, h3 {
+        margin-top: 1.5em;
+      }
+
+      p, li {
+        font-size: 18px;
+      }
     </style>
 
-    <!-- Importing the ESP Web Tools module -->
+    <!-- ESP Web Tools Script -->
     <script
       type="module"
       src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"
     ></script>
   </head>
   <body>
-    <div class="content">
-      <h1>ESP Web Tools</h1>
-      <p>
-        User friendly tools to manage ESP8266 and ESP32 devices in the browser:
-      </p>
-      <ul>
-        <li>Install &amp; update firmware</li>
-        <li>Connect device to the Wi-Fi network</li>
-        <li>Visit the device's hosted web interface</li>
-        <li>Access logs and send terminal commands</li>
-        <li>
-          Add devices to
-          <a href="https://www.home-assistant.io">Home Assistant</a>
-        </li>
-      </ul>
+    <!-- Hero Section with Image and Text Overlay -->
+    <div class="hero">
+      <div class="content">
+        <h1>ParkPeep - Live Disney Queue Times</h1>
+        <p>
+          The ultimate way to keep track of wait times for your favorite rides at
+          Disneyland<sup>®</sup> and Walt Disney World<sup>®</sup>! ParkPeep is a
+          stylish, portable device that shows live queue times from the parks, so
+          you can plan your day and avoid long waits.
+        </p>
 
-      <h2 id="demo">Try a live demo</h2>
+        <!-- Purchase Button -->
+        <a href="https://www.etsy.com/shop/MagicMoments3D" class="btn" target="_blank">Buy ParkPeep on Etsy</a>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <div class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+
+      <h3>How does ParkPeep work?</h3>
       <p>
-        To get started, connect an ESP device to your computer and hit the
-        button:
+        ParkPeep connects to the internet to pull live wait time data directly
+        from Disneyland<sup>®</sup> and Walt Disney World<sup>®</sup>. Just
+        plug it in, connect it to Wi-Fi, and you'll start seeing wait times on
+        your screen.
       </p>
-      <!-- Web Install Button -->
+
+      <h3>Can I update the firmware?</h3>
+      <p>
+        Yes! You can update the firmware to improve functionality or add new
+        features. Simply connect the device to your computer and use the
+        button below to install the latest update.
+      </p>
+
+      <!-- Web Install Button for Firmware Update -->
       <esp-web-install-button
-        manifest="https://jacobbestest.github.io/MagicQueue/manifest.json">
+        manifest="https://jacobbestest.github.io/MagicQueue/manifest.json"
       ></esp-web-install-button>
 
-      <h2 id="used-by">Products using ESP Web Tools</h2>
-      <div class="projects">
-        <!-- Example projects using ESP Web Tools -->
-        <!-- Content omitted for brevity -->
-      </div>
+      <h3>Is it compatible with both Disneyland and Disney World?</h3>
+      <p>
+        Yes, ParkPeep provides real-time data from both Disneyland<sup>®</sup>
+        and Walt Disney World<sup>®</sup>. You can switch between parks
+        depending on where you're visiting!
+      </p>
 
-      <!-- Footer and other sections omitted for brevity -->
+      <h3>Does it require a subscription?</h3>
+      <p>No, ParkPeep does not require a subscription. Just connect to Wi-Fi and enjoy!</p>
+
+      <h3>Where can I purchase ParkPeep?</h3>
+      <p>
+        You can purchase ParkPeep exclusively on Etsy at our
+        <a href="https://www.etsy.com/shop/MagicMoments3D" target="_blank">MagicMoments3D shop</a>.
+      </p>
     </div>
+
+    <!-- iOS Fix Script -->
     <script>
       if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
         document.querySelector(".not-supported-i").classList.remove("hidden");
