@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ESP Web Tools</title>
+    <meta
+      name="description"
+      content="Easily allow users to flash new firmware for their ESP-devices on the web."
+    />
+    <meta name="viewport" content="width=device-width" />
+
+    <!-- Metadata for social sharing and theming -->
+    <meta property="og:title" content="ESP Web Tools" />
+    <meta property="og:site_name" content="ESP Web Tools" />
+    <meta
+      property="og:url"
+      content="https://esphome.github.io/esp-web-tools/"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:description"
+      content="Easily allow users to flash new firmware for their ESP-devices on the web."
+    />
+    <meta
+      property="og:image"
+      content="https://esphome.github.io/esp-web-tools/static/social.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ESP Web Tools" />
+    <meta
+      name="twitter:description"
+      content="Easily allow users to flash new firmware for their ESP-devices on the web."
+    />
+    <meta
+      name="twitter:image"
+      content="https://esphome.github.io/esp-web-tools/static/social.png"
+    />
+    <meta name="color-scheme" content="dark light" />
+
+    <!-- CSS styling -->
+    <style>
+      body {
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Ubuntu, sans-serif;
+        padding: 0;
+        margin: 0;
+        line-height: 1.4;
+      }
+      .content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 12px;
+      }
+      /* Additional styling omitted for brevity */
+    </style>
+
+    <!-- Importing the ESP Web Tools module -->
+    <script
+      type="module"
+      src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"
+    ></script>
+  </head>
+  <body>
+    <div class="content">
+      <h1>ESP Web Tools</h1>
+      <p>
+        User friendly tools to manage ESP8266 and ESP32 devices in the browser:
+      </p>
+      <ul>
+        <li>Install &amp; update firmware</li>
+        <li>Connect device to the Wi-Fi network</li>
+        <li>Visit the device's hosted web interface</li>
+        <li>Access logs and send terminal commands</li>
+        <li>
+          Add devices to
+          <a href="https://www.home-assistant.io">Home Assistant</a>
+        </li>
+      </ul>
+
+      <h2 id="demo">Try a live demo</h2>
+      <p>
+        To get started, connect an ESP device to your computer and hit the
+        button:
+      </p>
+      <!-- Web Install Button -->
+      <esp-web-install-button
+        manifest="https://jacobbestest.github.io/MagicQueue/manifest.json">
+      ></esp-web-install-button>
+
+      <h2 id="used-by">Products using ESP Web Tools</h2>
+      <div class="projects">
+        <!-- Example projects using ESP Web Tools -->
+        <!-- Content omitted for brevity -->
+      </div>
+
+      <!-- Footer and other sections omitted for brevity -->
+    </div>
+    <script>
+      if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+        document.querySelector(".not-supported-i").classList.remove("hidden");
+      }
+    </script>
+  </body>
+</html>
