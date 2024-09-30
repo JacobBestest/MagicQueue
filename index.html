@@ -39,8 +39,6 @@
       body {
         font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
           Roboto, Ubuntu, sans-serif;
-        background-color: black;
-        color: white;
         padding: 0;
         margin: 0;
         line-height: 1.4;
@@ -49,19 +47,14 @@
       .hero {
         position: relative;
         width: 100%;
-        height: 100vh; /* Full height of the screen */
+        height: 80vh; /* Full height of the screen */
         background-image: url('https://parkpeep.com/Photos/GreenRender.png');
         background-size: cover;
         background-position: center;
-        background-attachment: scroll;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: multiply;
-        background-attachment: fixed;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start; /* Move content upwards */
+        padding-top: 50px; /* Add padding from the top */
       }
 
       .hero::before {
@@ -71,7 +64,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.4); /* Darker tint over the image */
+        background-color: rgba(0, 0, 0, 0.2); /* Dark tint over the image */
         z-index: 1;
       }
 
@@ -115,7 +108,7 @@
 
       .customization-section {
         display: flex;
-        align-items: center; /* Vertically center the image and text */
+        align-items: flex-start;
         justify-content: space-between;
         max-width: 1200px;
         margin: 40px auto;
@@ -139,7 +132,8 @@
 
       .customization-image {
         flex: 1.3; /* Increase the size of the image */
-        align-self: center; /* Vertically center the image */
+        align-self: flex-start; /* Align the image with the top of the section */
+        margin-top: -30px; /* Move the image up to align with the header */
       }
 
       .customization-image img {
@@ -176,7 +170,7 @@
     ></script>
   </head>
   <body>
-    <!-- Hero Section with Image and Text Overlay + Parallax Effect -->
+    <!-- Hero Section with Image and Text Overlay -->
     <div class="hero">
       <div class="content">
         <h1>ParkPeep</h1>
@@ -189,67 +183,6 @@
 
         <!-- Purchase Button -->
         <a href="https://www.etsy.com/shop/MagicMoments3D" class="btn" target="_blank">Buy ParkPeep on Etsy</a>
-      </div>
-    </div>
-
-    <!-- Customization Section -->
-    <div class="customization-section">
-      <div class="customization-text">
-        <h2>Make it your way</h2>
-        <p>
-          The ParkPeep is available in multiple colors with new styles on the way. 
-          Whether you're looking for something sleek or bold, we've got you covered. 
-          Have a custom request? Let us make your dream come true!
-        </p>
-      </div>
-      <div class="customization-image">
-        <img src="https://parkpeep.com/Photos/Colors.jpg" alt="ParkPeep Colors" />
-      </div>
-    </div>
-
-    <!-- FAQ Section -->
-    <div class="faq-section">
-      <h2>Frequently Asked Questions</h2>
-
-      <h3>How does ParkPeep work?</h3>
-      <p>
-        ParkPeep connects to the internet to pull live wait time data directly
-        from Disneyland<sup>®</sup> and Walt Disney World<sup>®</sup> with the help of
-        https://queue-times.com/. Just plug it in, connect it to Wi-Fi, select your desired park
-        and you'll start seeing wait times on your screen.
-      </p>
-
-      <h3>Does it require a subscription?</h3>
-      <p>
-        No, ParkPeep does not require a subscription. Just connect to Wi-Fi and enjoy!
-      </p>
-
-      <h3>Can I update the firmware?</h3>
-      <p>
-        Yes! You can update the firmware to improve functionality or add new
-        features. Simply connect the device to your computer and use the
-        button below to install the latest update.
-      </p>
-
-      <!-- Centered Web Install Button for Firmware Update -->
-      <div class="centered-button">
-        <esp-web-install-button
-          manifest="https://parkpeep.com/manifest.json"
-        ></esp-web-install-button>
-      </div>
-
-      <h3>Is it compatible with both Disneyland and Disney World?</h3>
-      <p>
-        Yes, ParkPeep provides real-time data from both Disneyland<sup>®</sup>
-        and Walt Disney World<sup>®</sup>. You can switch between parks on the main menu. 
-        The complete list of parks is Disneyland, California Adventure, Animal Kingdom,
-        Hollywood Studios, EPCOT, and Magic Kingdom.
-      </p>
-
-      <h3>Where can I purchase ParkPeep?</h3>
-      <p>
-        You can purchase ParkPeep exclusively on Etsy at our
-        <a href="https://www.etsy.com/shop/MagicMoments3D" target="_blank">Buy ParkPeep on Etsy</a>
       </div>
     </div>
 
