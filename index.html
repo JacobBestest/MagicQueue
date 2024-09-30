@@ -47,14 +47,14 @@
       .hero {
         position: relative;
         width: 100%;
-        height: 80vh; /* Full height of the screen */
+        height: 100vh; /* Full height of the screen */
         background-image: url('https://parkpeep.com/Photos/GreenRender.png');
         background-size: cover;
         background-position: center;
+        background-attachment: fixed; /* Enables parallax effect */
         display: flex;
         justify-content: center;
-        align-items: flex-start; /* Move content upwards */
-        padding-top: 50px; /* Add padding from the top */
+        align-items: center;
       }
 
       .hero::before {
@@ -64,7 +64,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.2); /* Dark tint over the image */
+        background-color: rgba(0, 0, 0, 0.4); /* Darker tint over the image for better readability */
         z-index: 1;
       }
 
@@ -170,7 +170,7 @@
     ></script>
   </head>
   <body>
-    <!-- Hero Section with Image and Text Overlay -->
+    <!-- Hero Section with Image and Text Overlay + Parallax Effect -->
     <div class="hero">
       <div class="content">
         <h1>ParkPeep</h1>
