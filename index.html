@@ -114,6 +114,11 @@
         margin: 40px auto;
       }
 
+      .centered-button {
+        text-align: center;
+        margin: 20px 0;
+      }
+
       h2, h3 {
         margin-top: 1.5em;
       }
@@ -153,9 +158,14 @@
       <h3>How does ParkPeep work?</h3>
       <p>
         ParkPeep connects to the internet to pull live wait time data directly
-        from Disneyland<sup>®</sup> and Walt Disney World<sup>®</sup>. Just
-        plug it in, connect it to Wi-Fi, and you'll start seeing wait times on
-        your screen.
+        from Disneyland<sup>®</sup> and Walt Disney World<sup>®</sup> with the help of
+        https://queue-times.com/. Just plug it in, connect it to Wi-Fi, select your desired park
+        and you'll start seeing wait times on your screen.
+      </p>
+
+      <h3>Does it require a subscription?</h3>
+      <p>
+        No, ParkPeep does not require a subscription. Just connect to Wi-Fi and enjoy!
       </p>
 
       <h3>Can I update the firmware?</h3>
@@ -165,20 +175,20 @@
         button below to install the latest update.
       </p>
 
-      <!-- Web Install Button for Firmware Update -->
-      <esp-web-install-button
-        manifest="https://parkpeep.com/manifest.json"
-      ></esp-web-install-button>
+      <!-- Centered Web Install Button for Firmware Update -->
+      <div class="centered-button">
+        <esp-web-install-button
+          manifest="https://parkpeep.com/manifest.json"
+        ></esp-web-install-button>
+      </div>
 
       <h3>Is it compatible with both Disneyland and Disney World?</h3>
       <p>
         Yes, ParkPeep provides real-time data from both Disneyland<sup>®</sup>
-        and Walt Disney World<sup>®</sup>. You can switch between parks
-        depending on where you're visiting!
+        and Walt Disney World<sup>®</sup>. You can switch between parks on the main menu. 
+        The complete list of parks is Disneyland, California Adventure, Animal Kingdom,
+        Hollywood Studios, EPCOT, and Magic Kingdom.
       </p>
-
-      <h3>Does it require a subscription?</h3>
-      <p>No, ParkPeep does not require a subscription. Just connect to Wi-Fi and enjoy!</p>
 
       <h3>Where can I purchase ParkPeep?</h3>
       <p>
