@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "ParpPeep",
-    "currentPage": "Specs.html",
+    "currentPage": "Tutorials.html",
     "theme": {
       "name": "mobirise4",
       "title": "Mobirise 4",
@@ -51,7 +51,7 @@
     "screenshot": "screenshot.png",
     "imageResize": true,
     "favicon": false,
-    "mbrsiteDomain": "cyouw2fwxz",
+    "mbrsiteDomain": "d9vcd5oyhl",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -3994,6 +3994,19 @@
                 "videoUrl": "https://youtu.be/46XnMizFE5M",
                 "image": "@PROJECT_PATH@/assets/images/android-quick-start-guide-2000x1125.png",
                 "thumb": "@PROJECT_PATH@/assets/images/android-quick-start-guide-2000x1125-800x450.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2024-9-3-23-2-41.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/Q6Ka5JUcFpk",
+                "image": "@PROJECT_PATH@/assets/images/changing-parks-2000x1125.png",
+                "thumb": "@PROJECT_PATH@/assets/images/changing-parks-2000x1125-800x450.png",
                 "alt": "",
                 "title": "",
                 "customStyle1": "display-7",
