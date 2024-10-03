@@ -2712,55 +2712,95 @@ section.lazy-placeholder:after {
     padding: 1rem;
   }
 }
-.cid-upZLEx6N6N {
-  padding-top: 7rem;
-  padding-bottom: 1rem;
-  background-color: #edefeb;
+.cid-uq7hVJDPSR {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url("../../../assets/images/greenclouds-1-2000x1125.png");
 }
-.cid-upZLEx6N6N .mbr-fallback-image.disabled {
-  display: none;
+.cid-uq7hVJDPSR P {
+  color: #767676;
 }
-.cid-upZLEx6N6N .mbr-fallback-image {
+.cid-uq7hVJDPSR H1 {
+  color: #ffffff;
+}
+.cid-uq7gUgygUd {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #f9f9f9;
+}
+.cid-uq7gUgygUd .mbr-section-subtitle {
+  color: #767676;
+}
+.cid-uq7gUgygUd .container-table {
+  margin: 0 auto;
+}
+.cid-uq7gUgygUd .scroll {
+  overflow-x: auto;
+  padding: 0;
+}
+.cid-uq7gUgygUd .dataTables_wrapper {
   display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
 }
-@media (max-width: 991px) {
-  .cid-upZLEx6N6N .image-wrapper {
-    margin-bottom: 1rem;
-  }
+.cid-uq7gUgygUd .dataTables_wrapper .search {
+  margin-bottom: .5rem;
 }
-.cid-upZLEx6N6N .row {
-  flex-direction: row-reverse;
+.cid-uq7gUgygUd .dataTables_wrapper .table {
+  overflow-x: auto;
 }
-.cid-upZLEx6N6N .row {
-  align-items: center;
+.cid-uq7gUgygUd table {
+  width: 100% !important;
+  margin-top: 6px;
+  border: 1px solid #cccccc;
+  margin-bottom: 0;
 }
-@media (max-width: 991px) {
-  .cid-upZLEx6N6N .image-wrapper {
-    padding: 1rem;
-  }
+.cid-uq7gUgygUd table th {
+  border-top: none;
+  transition: all .2s;
+  border-bottom: none;
 }
-@media (min-width: 992px) {
-  .cid-upZLEx6N6N .text-wrapper {
-    padding: 0 2rem;
-  }
-}
-.cid-upZLEx6N6N .mbr-section-title {
+.cid-uq7gUgygUd table th:hover {
+  background: #cccccc;
   color: #000000;
 }
-.cid-upZLEx6N6N .mbr-text,
-.cid-upZLEx6N6N .mbr-section-btn {
-  color: #232323;
-  text-align: left;
+.cid-uq7gUgygUd table td {
+  border-top: 1px solid #cccccc;
 }
-.cid-upZLEx6N6N .mbr-text,
-.cid-upZLEx6N6N .mbr-section-btn P {
-  text-align: left;
+.cid-uq7gUgygUd table.table {
+  background: #ffffff;
+}
+.cid-uq7gUgygUd .dataTables_filter {
+  text-align: right;
+  margin-bottom: .5rem;
+}
+.cid-uq7gUgygUd .dataTables_filter label {
+  display: inline;
+  white-space: normal !important;
+}
+.cid-uq7gUgygUd .dataTables_filter input {
+  display: inline;
+  width: auto;
+  margin-left: .5rem;
+  border-radius: 100px;
+  padding-left: 1rem;
+}
+.cid-uq7gUgygUd .dataTables_info {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  white-space: normal !important;
+}
+@media (max-width: 992px) {
+  .cid-uq7gUgygUd .dataTables_filter {
+    text-align: center;
+  }
+}
+@media (max-width: 350px) {
+  .cid-uq7gUgygUd .dataTables_filter {
+    text-align: center;
+  }
+  .cid-uq7gUgygUd .dataTables_filter input {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
 }
 .cid-upYv9UUHLb {
   padding-top: 2rem;
