@@ -51,7 +51,7 @@
     "screenshot": "screenshot.png",
     "imageResize": true,
     "favicon": false,
-    "mbrsiteDomain": "jro7hed6d6",
+    "mbrsiteDomain": "cf3jpaeb9u",
     "usedWebp": false,
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
@@ -60,7 +60,7 @@
     "cookiesAlert": false,
     "gdpr": false,
     "publishChangesOnly": true,
-    "publishEditFolder": true
+    "publishEditFolder": false
   },
   "pages": {
     "index.html": {
