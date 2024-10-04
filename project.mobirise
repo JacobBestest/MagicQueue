@@ -4025,6 +4025,19 @@
                 "title": "",
                 "customStyle1": "display-7",
                 "caption": "Type caption here",
+                "active": false
+              },
+              {
+                "tags": "Awesome",
+                "videoPreview": "@PROJECT_PATH@/assets/images/mobirise2024-9-5-11-40-25.jpg",
+                "playVideo": true,
+                "videoUrl": "https://youtu.be/lXgdyUXJzNA",
+                "image": "@PROJECT_PATH@/assets/images/adjusting-refresh-rate-2000x1125.png",
+                "thumb": "@PROJECT_PATH@/assets/images/adjusting-refresh-rate-2000x1125-800x450.png",
+                "alt": "",
+                "title": "",
+                "customStyle1": "display-7",
+                "caption": "Type caption here",
                 "active": true
               }
             ]
