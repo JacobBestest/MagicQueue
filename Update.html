@@ -23,7 +23,11 @@
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=mclthF"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=mclthF" type="text/css">
 
   
-  
+  <!-- Importing the ESP Web Tools module -->
+	<script
+		type="module"
+		src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"
+	></script>
   
 </head>
 <body>
@@ -78,9 +82,10 @@
                     <p class="mbr-text mbr-fonts-style display-7">
                         <br>Looking to update your Parkpeep? You came to the right spot, follow along with  this tutorial and getting the latest features, bugfixes, and more will be a breeze!<br><br><br><br></p>
                 </div>
-                <div class="mbr-section-btn">
-                        <a class="btn btn-md btn-primary display-4" href="https://mobiri.se">LEARN MORE</a>
-                        <a class="btn btn-md btn-white-outline display-4" href="https://mobiri.se">LIVE DEMO</a>
+      			<!-- Web Install Button -->
+ 			     <esp-web-install-button
+        			manifest="https://jacobbestest.github.io/MagicQueue/manifest.json">
+      			></esp-web-install-button>
                 </div>
             </div>
 
