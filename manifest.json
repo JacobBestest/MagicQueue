@@ -1,6 +1,6 @@
 {
   "name": "Parkpeep Firmware",
-  "version": "0.0.7",
+  "version": "0.0.11",
   "builds": [
     {
       "chipFamily": "ESP32",
